@@ -10,14 +10,14 @@
 </div>
 
 <script>
-    // ✅ Inject required TreeGrid services
+    // Inject required TreeGrid services
     ej.treegrid.TreeGrid.Inject(
         ej.treegrid.Edit,
         ej.treegrid.Toolbar,
         ej.treegrid.RowDD
     );
 
-    // ✅ Remote DataManager configuration
+    // Remote DataManager configuration
     var dataManager = new ej.data.DataManager({
         adaptor: new ej.data.UrlAdaptor(),
         url: "http://localhost:5077/Home/UrlDatasource",
@@ -27,7 +27,7 @@
         crossDomain: true
     });
 
-    // ✅ TreeGrid initialization
+    //  TreeGrid initialization
     var treegrid = new ej.treegrid.TreeGrid({
         dataSource: dataManager,
         idMapping: 'TaskId',
@@ -70,7 +70,7 @@
             }
         ],
 
-        // ✅ Row Drag & Drop handling with server call
+        //  Row Drag & Drop handling with server call
         rowDrop: function (args) {
             var tree = document.getElementsByClassName('e-treegrid')[0].ej2_instances[0];
 
@@ -84,10 +84,10 @@
                 position: args.dropPosition
             };
 
-            // ❌ Cancel default drop action
+            //  Cancel default drop action
             args.cancel = true;
 
-            // ✅ Send drop info to server
+            //  Send drop info to server
             var fetchObj = new ej.base.Fetch(
                 "http://localhost:5077/Home/MyTestMethod",
                 "POST"
@@ -106,6 +106,6 @@
         }
     });
 
-    // ✅ Render TreeGrid
+    //  Render TreeGrid
     treegrid.appendTo('#TreeGrid');
 </script>
