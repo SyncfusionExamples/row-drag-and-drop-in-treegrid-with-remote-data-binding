@@ -4,7 +4,7 @@
 This repository demonstrates remote data binding for ASP.NET Core TreeGrid using Url adaptor. It showcases fetching data dynamically and enabling server-side Row drag and drop action.
 
 ## Overview
-Remote data binding with URL API efficiently loads large datasets without requiring all data in memory, enabling real-time updates.
+Remote data binding using a URL endpoint API allows the TreeGrid to fetch and display data on demand, reducing memory usage and supporting scalable handling of large datasets.
 
 ## Features
 - URL API: connect to URL endpoints
