@@ -1,16 +1,16 @@
 # row-drag-and-drop-in-treegrid-with-remote-data-binding
 
 ## Repository Description
-This repository demonstrates remote data binding for ASP.NET Core TreeGrid using Url adaptor. It showcases fetching data dynamically and enabling server-side Row drag and drop action.
+This repository demonstrates remote data binding for ASP.NET Core TreeGrid using url adaptor. It showcases fetching data dynamically and enabling server-side Row drag and drop action.
 
 ## Overview
-Remote data binding using a URL endpoint API allows the TreeGrid to fetch and display data on demand, reducing memory usage and supporting scalable handling of large datasets.
+Remote data binding using a url adaptor allows the TreeGrid to fetch and display data on demand, reducing memory usage and supporting scalable handling of large datasets.
 
 ## Features
-- URL API: connect to URL endpoints
+- url adaptor: connect to url adaptor endpoints
 - Dynamic Binding: fetch from remote sources
 - Server-Side drag and drop: reordered data
-- Real-Time Updates: dynamic content
+
 
 ## Prerequisites
 - .NET 6.0 or higher
@@ -28,12 +28,12 @@ Remote data binding using a URL endpoint API allows the TreeGrid to fetch and di
 
 ## Usage
 Implement remote data binding:
-1. Create URL API endpoint returning JSON
-2. Configure treegrid with API URL
+1. Create url adaptor returning JSON
+2. Configure treegrid with url adaptor
 3. Set drag and drop handling in server end.
 
 ## Configuration
-- API Endpoint: API URL
+- API Endpoint: url adaptor
 - Response Format: JSON
 - DragDrop Parameters: Reordered data
 
